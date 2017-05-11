@@ -11,15 +11,7 @@ class StringFormatter:
 		return tempstr
 	
 	def addSpaces(self, string):
-		#Здравствуйте, здравствуйте дорогие друзья
-		#В эфире радио "Щиткод FM" и наша постоянная передача
-		#Костыль FM. И сегодня мы с вами будем бегать циклом по строке
-		#Зато работает
-		tempstr = ''
-		for i in string:
-			if not i == ' ':
-				tempstr += i + ' '
-		return tempstr
+		return ' '.join(list(string))
 		
 	def sortByLenght(self, string):
 		def SBL(str):
